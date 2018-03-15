@@ -56,26 +56,26 @@ class BaseDataFunc {
     print("返回字符串Unicode代码的可迭代对象" + helloW.runes.toString());
 
     print("截取0到4的字符串：" + helloW.substring(0, 4));
-    print("在字符串中插入 ${helloW}");
-    print("${trimW} 去掉前空格" + trimW.trimLeft());
-    print("${trimW} 去掉后空格" + trimW.trimRight());
-    print("${trimW} 去掉前后空格" + trimW.trim());
-    print("${helloW} 拆分" + helloW.split(new RegExp(r"l*")).toString());
-    print("${helloW} 包含" +
+    print("在字符串中插入 $helloW");
+    print("$trimW 去掉前空格" + trimW.trimLeft());
+    print("$trimW 去掉后空格" + trimW.trimRight());
+    print("$trimW 去掉前后空格" + trimW.trim());
+    print("$helloW 拆分" + helloW.split(new RegExp(r"l*")).toString());
+    print("$helloW 包含" +
         helloW.contains(new RegExp(r'[A-Za-z]'), helloW.length - 2).toString());
-    print("${helloW} 包含" +
+    print("$helloW 包含" +
         helloW.contains(new RegExp(r'[A-Za-z]'), helloW.length - 1).toString());
 
     phonePre = phonePre.padLeft(3, '+');
-    print("${phonePre} 前补占位符" + phonePre);
-    print("${phonePre} 后补占位符" + phonePre.padRight(4, "x"));
+    print("$phonePre 前补占位符" + phonePre);
+    print("$phonePre 后补占位符" + phonePre.padRight(4, "x"));
 
-    print("${helloW} 索引" + helloW.indexOf('d').toString());
-    print("${helloW} 索引" + helloW.indexOf(new RegExp(r' ')).toString());
-    print("${helloW} last索引" + helloW.lastIndexOf("l").toString());
-    print("${helloW} last索引" + helloW.lastIndexOf(new RegExp(r'l')).toString());
+    print("$helloW 索引" + helloW.indexOf('d').toString());
+    print("$helloW 索引" + helloW.indexOf(new RegExp(r' ')).toString());
+    print("$helloW last索引" + helloW.lastIndexOf("l").toString());
+    print("$helloW last索引" + helloW.lastIndexOf(new RegExp(r'l')).toString());
 
-    print("${helloW} 替换" + helloW.replaceAll('l', 'L').toString());
+    print("$helloW 替换" + helloW.replaceAll('l', 'L').toString());
 
     RegExp exp = new RegExp(r"(\w+)");
     // 返回正则表达式的哈希码

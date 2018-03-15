@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/widget/RandomWords.dart';
+import 'package:myapp/OfficialSample.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -7,7 +7,7 @@ void main() {
     theme: new ThemeData(
       primaryColor: Colors.white,
     ),
-    home: new RandomWords(),
+    home: new TutorialHome(),
   ));
 }
 

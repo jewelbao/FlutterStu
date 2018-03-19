@@ -1,3 +1,4 @@
+/// 函数语法
 class Func {
 
   final dynamic tip = '等价写法';

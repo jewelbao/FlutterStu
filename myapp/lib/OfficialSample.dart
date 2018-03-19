@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/widget/Counter.dart';
+import 'package:myapp/widget/MyButton.dart';
 
 // 基础控件布局验证
 class MyAppBar extends StatelessWidget {
@@ -66,14 +68,19 @@ class TutorialHome extends StatelessWidget {
           backgroundColor: Colors.blue,
           leading: new IconButton(
               icon: new Icon(Icons.menu),
-              onPressed: new ScaffoldState().openDrawer),
+              onPressed: null),
           title: new Text('Example title'),
           actions: <Widget>[
             new IconButton(icon: new Icon(Icons.search), onPressed: null)
           ],
         ),
         body: new Center(
-          child: new Text('Official'),
+          child: new Column(
+            children: <Widget>[
+              new MyButton(),
+              new Counter(),
+            ],
+          ),
         ),
         drawer: new AnimatedContainer(
             duration: Duration.zero,

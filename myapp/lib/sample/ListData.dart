@@ -1,3 +1,4 @@
+/// 集合类型
 class ListDataFunc {
   /// 固定长度列表
   void fixedLengthList() {

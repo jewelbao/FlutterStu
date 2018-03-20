@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/widget/Counter.dart';
 import 'package:myapp/widget/MyButton.dart';
+import 'package:myapp/widget/DeviceInfoList.dart';
 
 // 基础控件布局验证
 class MyAppBar extends StatelessWidget {
@@ -82,22 +83,22 @@ class TutorialHome extends StatelessWidget {
             ],
           ),
         ),
-        drawer: new AnimatedContainer(
-            duration: Duration.zero,
-            width: 200.0,
-            decoration: new BoxDecoration(
-              color: Colors.white,
-            ),
-            child: new Column(
-              children: <Widget>[
-                new Text('hahah',),
-                new Text('hahah'),
-                new Text('hahah'),
-                new Text('hahah'),
-                new Text('hahah'),
-              ],
-            )),
-
+//        drawer: new AnimatedContainer(
+//            duration: Duration.zero,
+//            width: 200.0,
+//            decoration: new BoxDecoration(
+//              color: Colors.white,
+//            ),
+//            child: new Column(
+//              children: <Widget>[
+//                new Text('hahah',),
+//                new Text('hahah'),
+//                new Text('hahah'),
+//                new Text('hahah'),
+//                new Text('hahah'),
+//              ],
+//            )),
+        drawer: new DeviceInfoList(),
         floatingActionButton: new FloatingActionButton(
             child: new Icon(Icons.message),
             onPressed: null),

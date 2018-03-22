@@ -10,7 +10,6 @@ class DeviceInfoList extends StatefulWidget {
   State<StatefulWidget> createState() {
     return new DeviceInfoState();
   }
-
 }
 
 
@@ -56,7 +55,7 @@ class DeviceInfoState extends State<DeviceInfoList> {
 
     try{
       if(Platform.isAndroid) {
-        deviceData = readAndroidBuildData(await deviceInfoPlugin.androidInfo);
+        deviceData = _readAndroidBuildData(await deviceInfoPlugin.androidInfo);
       } else if(Platform.isIOS) {
         deviceData = readIosDeviceInfo(await deviceInfoPlugin.iosInfo);
       }
@@ -70,7 +69,7 @@ class DeviceInfoState extends State<DeviceInfoList> {
     });
   }
 
-  Map<String, dynamic> readAndroidBuildData(AndroidDeviceInfo build) {
+  Map<String, dynamic> _readAndroidBuildData(AndroidDeviceInfo build) {
     return <String, dynamic>{
       'version.securityPatch': build.version.securityPatch,
       'version.sdkInt': build.version.sdkInt,

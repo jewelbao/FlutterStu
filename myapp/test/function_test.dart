@@ -5,7 +5,7 @@
 // are correct.Func
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:myapp/sample/Function.dart';
+import 'package:myapp/base/Function.dart';
 
 void main() {
 

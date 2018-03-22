@@ -78,7 +78,7 @@ class TutorialHome extends StatelessWidget {
         body: new Center(
           child: new Column(
             children: <Widget>[
-              new MyButton(),
+              new GestureDetectorButton(),
               new Counter(),
             ],
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
-class MyButton extends StatelessWidget {
+/// 监听手势的按钮
+class GestureDetectorButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
